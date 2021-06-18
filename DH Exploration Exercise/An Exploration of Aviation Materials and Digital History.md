@@ -4,7 +4,7 @@ The data used in this document has been taken from Ingenium Canada (Source: http
 
 # Wrangling
 
-# Excel
+### Excel
 
 The data was loaded into Excel through a .Csv file, which generated a table. Each column represented the appropriate metadata of each historical artifact held by all three museums. Excel tables are very powerful as they allow for the data to be sorted easily by any of the metadata. Additionally, Excel can be used to generate charts and graphs to depict trends or patterns in the data selected. In this case, the data was sorted in excel by the category "Aviation" and then organized chronologically. After hiding the irrelevant columns, here is the resulting table:
 
@@ -12,7 +12,7 @@ The data was loaded into Excel through a .Csv file, which generated a table. Eac
 
 There are several entries in this table that are missing metadata such as the year the artifacts originate from, or the materials they are composed of. Additionally, some pieces of the metadata were added within the same cell. This restricts the ability to sort the table by these terms without extracting them and categorizing each artifact appropriately. I am not aware of a way to do this within Excel, however it may be possible. This would also open up new ways to categorize the data and potentially new insights.
 
-#Voyant
+### Voyant
 
 The data was then loaded into Voyant, once including the partial entries and then again omitting the partial entries. The entries without dates were not omitted in Chart A, and they were omitted in chart B.
 
@@ -22,7 +22,7 @@ The data was then loaded into Voyant, once including the partial entries and the
 
 After examining both charts, there is an obvious difference between omitting and not omitting the partial entries. One drastic difference is the increase in the relative frequency of "metal" in chart A versus chart B. If one was not aware of the partial entries, it would appear as though there is a drastic increase in metal artifacts in the 21st century. Upon closer examination, all non-dated entries were included at the end of the data after the most recent artifact. Chart B reflects the difference that omitting these entries makes on the graph. There are a few interesting trends visible in chart B. Around the year 1940, there is a large increase in the relative frequency of paper in the materials composing these artifacts. returning to the excel chart we can see that there are a significant quantity of maps and uniforms that are from this period. One might make the assumption that a selection of maps and uniforms are consistent with the use of fighter planes in the second world war. An equally plausible explanation might be that the increase in the artifacts selected is consistent with an increase in domestic flights during this period. Matthew Lincoln states the following in his piece titled *Confabulation in the humanities*: "we are particularly susceptible to confabulating these post-facto rationalizations with the idea that we somehow knew the results of this quantitative work already" (Lincoln 2015). By digging deeper into the metadata and examining the individual artifacts, it becomes clear that these maps are curated due to their significance to aviation in the second world war. Although this seems trivial, as Lincoln says it is worth our time to run experiments and analysis to confirm or contrast the narratives that we fabricate as historians.
 
-#Antconc
+### Antconc
 
 Antconc is a powerful text analysis tool that allows us to make comparisons on a large scale. Antconc reads text files in the form of a "Corpus" and then allows the user to search for key terms. After running a search Antconc displays Concordance, a Concordance Plot, Collocates, a word list, and a keyword list. These can be used to find statistical relationships between words within the corpus. Using the data from the Excel spreadsheet, I searched the corpus for the term "suit" and then navigated to the "clusters/N-Grams" tab. The results are shown here:
 
@@ -30,7 +30,7 @@ Antconc is a powerful text analysis tool that allows us to make comparisons on a
 
 Looking at the clusters, we can observe that the materials used in flight suits changed from natural materials such as wool, leather and cotton in the early 20th century to more Synthetic materials such as nylon, rubber and plastic. We could have observed this within the excel table as well, however Antconc allows for another powerful comparison. Antconc allows for multiple Corpora to be loaded and compared against one another. If we wanted to observe how this trend may compare to suits or other garments beyond the category of aviation, we can generate a new text file with this data and load it into Antconc.
 
-#Storymaps
+### Storymaps
 
 Storymaps is a tool that allows for slides to be pinned to a map to visualize the geographical aspect of a story. Using our data from the aforementioned museums, we can plot artifacts of interest to their geographical origin. This does not give an analysis of the quantity of artifacts per location, but rather serves to spark an interest in specific artifacts that are historically significant in an easily digestible format. The following is a story map generated from several artifacts I found interesting within the data.
 
@@ -39,7 +39,7 @@ Storymaps is a tool that allows for slides to be pinned to a map to visualize th
 Storymaps allows the viewer to appreciate the geographical aspect of the information presented, as well as the visual characteristics if one chooses to include images.
 
 
-# What does this all mean?
+### What does this all mean?
 
 Understanding context and how our manipulation of data can effect our analysis is absolutely critical. In a [twitter thread](https://twitter.com/amaliasl/status/1245544256212807680) Amalia S. Levi discussed gaps in digital archives and what they mean. She explains that gaps exist because digitization is selective. Sometimes archivists decide something is not relevant or important to include. As digital historians we will also be selective with our inclusion or exclusion of information during our analysis, and it is our responsibility to consider what these "gaps" mean. In some cases, an omission is a wise way to prevent skewing data in an unrealistic way. For example, we could see in Voyant how uncategorized data skewed the relative frequency curves for artifact materials. Although we omitted these entries, it is important to ask why those entries may be incomplete. Additionally, if they were to be appropriately categorized how might that effect the visible trends?
 
